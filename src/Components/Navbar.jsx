@@ -89,11 +89,7 @@ const Navbar = () => {
                   Galar
                 </Link>
               </li>
-              <li className={`nav-item ${styles.navBarLink}`}>
-                <Link className="nav-link" to="/favs">
-                  Favs
-                </Link>
-              </li>
+            
 
 
 

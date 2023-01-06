@@ -78,7 +78,7 @@ const Unova = () => {
 
     }
     useEffect(() => {
-        scrollToTop();
+      
         axios.get(`https://pokeapi.co/api/v2/pokemon/${index}`)
             .then(res => {
                 if (pokemonUnova.length <= 155) {
@@ -88,7 +88,7 @@ const Unova = () => {
                     setIndex(index + 1)
                 };
 
-
+                scrollToTop();
             }
             )
     }, [index])

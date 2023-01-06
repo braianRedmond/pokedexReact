@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import App from "./App";
 import Kanto from "./Routes/Kanto";
-import Detail from "./Routes/Detail";
+
 
 
 import { ContextProvider } from "./Components/utils/global.context";
@@ -34,8 +34,7 @@ root.render(
           <Route index path="/unova" element={<Unova />} />
           <Route index path="/kalos" element={<Kalos />} />
           <Route index path="/alola" element={<Alola />} />
-          <Route index path="/galar" element={<Galar />} />
-          <Route path="/dentist/:id" element={<Detail />} />
+          <Route index path="/galar" element={<Galar />} />         
         </Route>
       </Routes>
     </ContextProvider>

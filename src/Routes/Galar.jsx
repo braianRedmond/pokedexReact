@@ -3,10 +3,8 @@ import axios from "axios";
 import FuncionalPoke from "../Components/FuncionalPoke"
 
 const pokemonGalar = []
-const Galar = () => {
-    const scrollToTop = () => {
+const Galar = () => {    
         window.scrollTo(0, 0)
-    }
 
 
 
@@ -79,7 +77,7 @@ const Galar = () => {
 
     }
     useEffect(() => {
-        scrollToTop();
+
         axios.get(`https://pokeapi.co/api/v2/pokemon/${index}`)
             .then(res => {
                 if (pokemonGalar.length <= 87) {
@@ -88,7 +86,7 @@ const Galar = () => {
                 if (index <= 808) {
                     setIndex(index + 1)
                 };
-
+              
 
             }
             )
